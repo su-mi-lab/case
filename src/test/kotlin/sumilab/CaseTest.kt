@@ -6,7 +6,11 @@ import com.sumilab.Case
 class CaseTest {
 
     @Test
-    fun testCase() {
-        assertEquals(Case.test(), "Hello!")
+    fun testToPascal() {
+        val pascalCase = "HelloWorld"
+
+        assertEquals(Case.toPascal("hello_world"), pascalCase)
+        assertEquals(Case.toPascal("helloWorld_"), pascalCase)
+        assertEquals(Case.toPascal("_hello_world_"), pascalCase)
     }
 }
