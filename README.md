@@ -9,6 +9,7 @@
 ```
 
 Case.toPascal("hello_world") => HelloWorld
-Case.toPascal("hello_world") => HelloWorld
+Case.toCamel("hello_world") => helloWorld
+Case.toSnake("helloWorld") => hello_world
 
 ```
